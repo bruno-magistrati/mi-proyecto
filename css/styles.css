@@ -8,7 +8,7 @@
 
 body{
     position: relative;
-    padding-bottom: 300px;
+    background-color: #39363b;
 }
     /* INICIO NAVEGADOR */
     .header{
@@ -164,7 +164,7 @@ body{
     max-width: 900px;
     margin: auto;
     overflow: hidden; 
-    box-shadow: 0 0 0 10px #fff,
+    box-shadow: 0 0 0 5px #fff,
                 0 15px  50px;
     position: relative;
 }
@@ -221,49 +221,110 @@ right: 10px;
 }
  /* FIN CARRUSEL */
         /* INICIO CARDS */
-        #nuestros-productos .productos h2{
+        .container-card{
+            width: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 1100px;
+            margin: auto;
         }
-        #nuestros-productos .cards{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+        .title-cards{
+            width: 100%;
+            max-width: 1080px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: #7a7a7a;
         }
-        #nuestros-productos .carta{
-            display: flex;
-            flex-direction: column;
-            width: 25vw;
-            padding: 50px;
-            border: solid black;
+        .card{
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            border: solid 2px black;
+            overflow: hidden;
+            background:#fff;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
         }
-        #nuestros-productos .carta h3{
-            display: flex;
-            justify-content: center;
-
+        .card:hover{
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+            transform: translateY(-3%);
         }
-        
-        
+        .card img{
+            width: 100%;
+            height: 210px;
+        }
+        .card .contenido-card{
+            padding: 15px;
+            text-align: center;
+        }
+        .card .contenido-card h3{
+            margin-bottom: 15px;
+            color: #7a7a7a;
+        }
+        .card .contenido-card p{
+            line-height: 1.8;
+            color: #6a6a6a;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .card .contenido-card a{
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #2fb4cc;
+            border: 1px solid #2fb4cc;
+            border-radius: 4px;
+            transition: all 400ms ease;
+            margin-bottom: 5px;
+        }
+        .card .contenido-card a:hover{
+            background: #2fb4cc;
+            color: #fff;
+        }
+        @media only screen and (min-width:320px) and (max-width:768px){
+            .container-card{
+                flex-wrap: wrap;
+            }
+            .card{
+                margin: 15px;
+            }
+        }
         /* FIN CARDS  */
         /* INICIO MOSTRADOR */
         #muestra-productos .mostrador{
             display: flex;
             border: solid black;
-            margin: 10px;
+            width: 98%;
+            margin-left: 15px;
+            height: 300px;
             flex-direction: row;
             justify-content: space-between;
+            background-color: #1b3039;
         }
-        #muestra-productos .video{
-            border: solid black;
-            margin: 10px;
-            width: 50%;
+
+
+        #muestra-productos .mostrador .videoclip{
+        display: flex;
+        height: 100%;
+    }
+    #muestra-productos .mostrador video{
+        width: 100%;
+
+    }
+
+    #muestra-productos .texto-video{
+        width: 64%;
+        font-size: 20px;
+        letter-spacing: 1px;
+        color: #e2f1f8;
         }
-        #muestra-productos .video video{
-            width: 100%;
-        }
-        #muestra-productos .texto-video{
-            width: 50%;
+        #muestra-productos .texto-video h2{
+        display: flex;
+        justify-content: center;
+        margin: 1px;
         }
 
         /* FIN MOSTRADOR */
@@ -308,13 +369,13 @@ right: 10px;
         }
         
         .footer-distributed {
-            background-color: #2d2a30;
+            background-color: #1b3039;
             box-sizing: border-box;
             width: 100%;
             text-align: left;
             font: bold 16px sans-serif;
             padding: 50px 50px 60px 50px;
-            margin-top: 80px;
+            margin-top: 100px;
         }
         
         .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {

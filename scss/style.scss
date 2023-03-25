@@ -1,12 +1,36 @@
-// @import "./utilities/variables";
-// @import"./base/reset";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Playfair Display", serif;
-    text-decoration: none; 
-}
-main{
-    background-color: aliceblue;
-}
+@import "./utilities/variables";
+@import"./utilities/mixins";
+@import"./base/reset";
+@import "./layout/header";
+@import"./layout/index-carrusel";
+@import"./layout/index-cards";
+@import"./layout/index-reproductor";
+@import"./layout/index-galeria";
+@import"./layout/footer";
+@import"./layout/joyeria-buscador";
+// @import"./layout/joyeria-buscador-responsive;
+@import"./layout/antiguedades-flip-card";
+
+
+
+        // meidaquerry
+        // MEDIDA 320PX
+    @import"./layout/media-header-320";
+    @import"./layout/media-index-320";
+    @import"./layout/media-footer-320";
+    @import"./layout/media-joyeria-320";
+    @import"./layout/media-antiguedades-320";
+        // MEDIDA 480PX
+    @import"./layout/media-header-480";
+    @import"./layout/media-index-480";
+    @import"./layout/media-footer-480";
+    @import"./layout/media-joyeria-480";
+    @import"./layout/media-antiguedades-480";
+        // MEDIDA 768
+        @import"./layout/media-header-768";
+        @import"./layout/media-index-768";
+        // BREACKPOINT PERSONALIZADO
+        @import"./layout/media-footer-600";
+        // BREACKPOINT PERSONALIZADO
+        @import"./layout/media-joyeria-768";
+        @import"./layout/media-antiguedades-768";

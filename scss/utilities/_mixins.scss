@@ -1,0 +1,5 @@
+@mixin breackpoint-480($medida : 480px){
+    @media (max-width: $medida){
+        @content
+    }
+}

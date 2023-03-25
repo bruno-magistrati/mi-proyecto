@@ -236,6 +236,21 @@ right: 10px;
             text-align: center;
             color: #7a7a7a;
         }
+        .title-cards h2{
+            color: #fff;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .title-cards h2::after{
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #C7C7C7;
+            margin: 20px 0;
+        }
         .card{
             width: 100%;
             margin: 20px;
@@ -301,8 +316,6 @@ right: 10px;
             width: 98%;
             margin-left: 15px;
             height: 300px;
-            flex-direction: row;
-            justify-content: space-between;
             background-color: #1b3039;
         }
 
@@ -318,9 +331,13 @@ right: 10px;
 
     #muestra-productos .texto-video{
         width: 64%;
-        font-size: 20px;
-        letter-spacing: 1px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
         color: #e2f1f8;
+        text-align: center;
+        text-align: justify;
+        margin: 0.5px;
+        border: solid 5px #1b3039 ;
         }
         #muestra-productos .texto-video h2{
         display: flex;
@@ -328,16 +345,41 @@ right: 10px;
         margin: 1px;
         }
 
+        
+
         /* FIN MOSTRADOR */
         /* INICIO GALERIA GRID  */
-        .item-grid{
+        .galeria-productos h2{
+            color: #fff;
+            font-weight: 400;
             display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .galeria-productos h2::after{
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: #C7C7C7;
+            margin: 20px 0;
+        }
+        .galeria-grid{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 1fr ));
+            grid-auto-rows: minmax(150px, auto);
+            gap: 20px;
+            padding: 20px;
+        }
+        .item-grid img {
+            display: flex;
+            width: 100%;
+            height: 200px;
             align-items: center;
             justify-content: center;
             background-color: #3F71EA;
             border-radius: 4px;
             transition: transform 0.3s ease-in-out;
-
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -345,13 +387,6 @@ right: 10px;
             .item-grid:hover{
                 filter: opacity(0.9);
                 transform: scale(1.04);
-            }
-            .galeria-grid{
-                display: grid;
-                grid-template-columns: repeat(2, minmax(200px, 1fr ));
-                grid-auto-rows: minmax(150px, auto);
-                gap: 20px;
-                padding: 20px;
             }
         /* FIN GALERIA GRID  */
         /* INICIO FOOTER  */

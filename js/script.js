@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	
+// $(document).ready(function(){
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
 	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
 
@@ -34,4 +33,4 @@ $(document).ready(function(){
 			$('.product-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
-});
+// });

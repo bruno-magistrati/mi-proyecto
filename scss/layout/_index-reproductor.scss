@@ -1,0 +1,30 @@
+.mostrador{
+    display: flex;
+    border: solid black;
+    width: 98%;
+    margin-left: 15px;
+    height: 300px;
+    background-color: $background-nav-footer;
+}
+.videoclip{
+    display: flex;
+    height: 100%;
+    video{
+        width: 100%;
+    }
+}
+.texto-video{
+    width: 64%;
+    font-size: 18px;
+    letter-spacing: 0.5;
+    color: $color-letras;
+    text-align: center;
+    text-align: justify;
+    margin: 0.5;
+    border: solid 5px $background-nav-footer;
+    h2{
+        display: flex;
+        justify-content: center;
+        margin: 1px;
+    }
+}

@@ -1,0 +1,62 @@
+.cards-antiguedades{
+    h1{
+        color: $color-letras;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 15px 0;
+        &::after{
+            content: '';
+            width: 85%;
+            height: 1px;
+            background-color: $subrayado-titulos;
+            margin: 20px 95px 0;
+        }
+    }
+}
+.cards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.flip-card{
+    width: 354px;
+    height: 400px;
+    margin-top: 20px;
+    perspective: 2000px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-radius: 28px;
+    transition: all 500ms cubic-bezier(0.1,0.22,0.8,1.13);
+    transform-style:preserve-3d;
+}
+.flip-card-front, .flip-card-back{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+}
+.flip-card-front{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flip-card-back{
+    font-size: 1.25rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+    color: $color-letras;
+    background-color: $background-nav-footer;
+    transform: rotatey(180deg);
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotatey(-180deg);
+}

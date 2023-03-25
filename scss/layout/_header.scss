@@ -1,0 +1,102 @@
+body{
+    position: relative;
+    background-color: #39363b;
+}
+header{
+background-color: $background-nav-footer;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+height: 85px;
+padding: 5px 10%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+
+    img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+
+    &:hover{
+transform: scale(1.2);
+}
+}
+}
+
+
+.nav-links{
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 0 20px;
+
+        &:hover, .overlay, a:hover{
+        transform: scale(1.1);
+    }
+    a {
+    font-size: 700;
+    color: $color-letras; 
+
+    &:hover{
+        color: $color-hover;
+    }
+    }
+    }
+    
+}
+.menu{
+    display: none;
+    button{
+        margin-left: 20px;
+        font-weight: 700;
+        color: $background-nav-footer;
+        padding: 9px 25px;
+        background: $color-letras;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            background-color: $color-letras;
+            color: $color-hover;
+            transform: scale(1.1);
+        }
+    }
+}
+.overlay{
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+background-color: $background-nav-footer;
+overflow: hidden;
+transition: all 0.3s ease 0s;
+}
+.overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a{
+        padding: 15px;
+        font-size: 36px;
+        display: block;
+        transition: all 0.3 ease 0s;
+        font-weight: 700;
+        color: $color-letras;
+        &:hover,&:focus{
+            color: $color-hover;
+        }
+    }
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}

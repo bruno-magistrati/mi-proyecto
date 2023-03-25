@@ -55,7 +55,10 @@
     align-items: center;
     align-self: flex-start;
     transition: all .4s;
-    img{width: 100%;
+
+    img{
+    width: 100%;
+    background-size: cover;
     }
     a{
         display: block;

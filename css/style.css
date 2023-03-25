@@ -680,10 +680,6 @@ footer {
     right: 35px; } }
 
 @media (max-width: 768px) {
-  .carrusel {
-    display: none; }
-  .container-card {
-    flex-wrap: wrap; }
   .card {
     margin: 15px; }
   .mostrador {
@@ -691,9 +687,7 @@ footer {
     width: 100%;
     height: 218px; }
   .texto-video {
-    display: none; }
-  .galeria-grid {
-    grid-template-columns: 1fr; } }
+    font-size: 8px; } }
 
 @media (max-width: 600px) {
   .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -746,9 +740,25 @@ footer {
     margin: 0; }
     .cards-antiguedades h1::after {
       margin: 12px 20px; }
-  .cards-grid {
-    grid-template-columns: 1fr; }
   .flip-card {
     width: 250px; }
   .flip-card-back {
     font-size: 1.10rem; } }
+
+@media (max-width: 960px) {
+  .card {
+    margin: 15px; }
+  .mostrador {
+    margin: 0;
+    width: 100%;
+    height: 218px; }
+  .texto-video {
+    font-size: 13px; } }
+
+@media (max-width: 1024px) {
+  .mostrador {
+    margin: 0;
+    width: 100%;
+    height: 218px; }
+  .texto-video {
+    font-size: 13px; } }

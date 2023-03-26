@@ -1,0 +1,19 @@
+@media(max-width:620px){
+    .cards-antiguedades{
+    h1{
+        margin: 0;
+        &::after{
+            margin: 12px 20px;
+        }
+    } 
+    }
+    .cards-grid{
+        grid-template-columns: 1fr;
+    }
+    .flip-card{
+        width: 250px;
+    }
+    .flip-card-back{
+        font-size: 1.10rem;
+    }
+}

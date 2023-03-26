@@ -1,0 +1,23 @@
+@media (max-width:620px){
+    .carrusel{
+        display: none;
+    }
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin: 15px;
+    }
+    .mostrador{
+        margin: 0;
+        width: 100%;
+        height: 218px;
+    }
+    .texto-video{
+        display: none;
+        
+    }
+    .galeria-grid{
+        grid-template-columns: 1fr;
+    }
+}

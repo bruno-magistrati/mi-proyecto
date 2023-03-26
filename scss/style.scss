@@ -13,28 +13,32 @@
 
 
 
-        // meidaquerry
-        // MEDIDA 320PX
-    @import"./layout/media-header-320";
-    @import"./layout/media-index-320";
-    @import"./layout/media-footer-320";
-    @import"./layout/media-joyeria-320";
-    @import"./layout/media-antiguedades-320";
-        // MEDIDA 480PX
+// meidaquerry
+    // MEDIA 1024
+    @import"./layout/media-index-1024";
+    // MEDIA 960
+    @import"./layout/media-index-960";
+    // MEDIDA 768
+    @import"./layout/media-joyeria-768";
+    @import"./layout/media-antiguedades-768";
+    @import"./layout/media-header-768";
+    @import"./layout/media-index-768";
+    // MEDIDA 620
+    @import"./layout/_media-index-620";
+    @import"./layout/media-antiguedades-620";
+    // BREACKPOINT PERSONALIZADO
+    @import"./layout/media-footer-600";
+    // BREACKPOINT PERSONALIZADO
+    // MEDIDA 480PX
     @import"./layout/media-header-480";
     @import"./layout/media-index-480";
     @import"./layout/media-footer-480";
     @import"./layout/media-joyeria-480";
     @import"./layout/media-antiguedades-480";
-        // MEDIDA 768
-        @import"./layout/media-header-768";
-        @import"./layout/media-index-768";
-        // BREACKPOINT PERSONALIZADO
-        @import"./layout/media-footer-600";
-        // BREACKPOINT PERSONALIZADO
-        @import"./layout/media-joyeria-768";
-        @import"./layout/media-antiguedades-768";
-        // MEDIA 960
-        @import"./layout/media-index-960";
-        // MEDIA 1024
-        @import"./layout/media-index-1024";
+    // MEDIDA 320PX
+    @import"./layout/media-header-320";
+    @import"./layout/media-index-320";
+    @import"./layout/media-footer-320";
+    @import"./layout/media-joyeria-320";
+    @import"./layout/media-antiguedades-320";
+    
